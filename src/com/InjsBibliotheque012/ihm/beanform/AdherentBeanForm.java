@@ -1,13 +1,8 @@
-package com.InjsBibliotheque030.dao;
+package com.InjsBibliotheque012.ihm.beanform;
 
 import java.util.Date;
 
-public class AdherentDao extends DaoItem{
-
-	public AdherentDao() {
-		// TODO Auto-generated constructor stub
-	}
-	
+public class AdherentBeanForm extends BeanFormItem{
 	private int id;
 	private String nom;
 	private String prenom;
@@ -58,6 +53,4 @@ public class AdherentDao extends DaoItem{
 	public void setDateAdhesion(Date dateAdhesion) {
 		this.dateAdhesion = dateAdhesion;
 	}
-	 	
-
 }

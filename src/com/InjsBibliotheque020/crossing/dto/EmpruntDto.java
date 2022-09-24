@@ -1,29 +1,26 @@
-package com.InjsBibliotheque030.dao;
+package com.InjsBibliotheque020.crossing.dto;
 
 import java.util.Date;
 
-public class EmpruntDao extends DaoItem{
 
-	public EmpruntDao() {
-		// TODO Auto-generated constructor stub
-	}
-	
-	private AdherentDao adherent;
-	private LivreDao livre;
+
+public class EmpruntDto extends DtoItem {
+	private AdherentDto adherent;
+	private LivreDto livre;
 	private Date dateEmprunt;
 	private Date dateLimitePrevueRetour;
 	private Date dateRetour;
 	
-	public AdherentDao getAdherent() {
+	public AdherentDto getAdherent() {
 		return adherent;
 	}
-	public void setAdherent(AdherentDao adherent) {
+	public void setAdherent(AdherentDto adherent) {
 		this.adherent = adherent;
 	}
-	public LivreDao getLivre() {
+	public LivreDto getLivre() {
 		return livre;
 	}
-	public void setLivre(LivreDao livre) {
+	public void setLivre(LivreDto livre) {
 		this.livre = livre;
 	}
 	public Date getDateEmprunt() {
@@ -44,7 +41,4 @@ public class EmpruntDao extends DaoItem{
 	public void setDateRetour(Date dateRetour) {
 		this.dateRetour = dateRetour;
 	}
-	
-	
-
 }

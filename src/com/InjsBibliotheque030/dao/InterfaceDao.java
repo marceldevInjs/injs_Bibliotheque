@@ -11,7 +11,7 @@ public interface InterfaceDao {
 	 * @return
 	 */
 	public boolean insert();
-	public boolean insert(EntityDao entity);
+	public boolean insert(DaoItem entity);
 
 	/**
 	 * 
@@ -19,26 +19,26 @@ public interface InterfaceDao {
 	 * @return
 	 */
 	public boolean update(int id);
-	public boolean update(EntityDao entity);
+	public boolean update(DaoItem entity);
 
 	/**
 	 * 
 	 * @param id
 	 * @return
 	 */
-	public EntityDao searchById(int id);
+	public DaoItem searchById(int id);
 
 	/**
 	 * 
 	 * @param name
 	 * @return
 	 */
-	public Collection<EntityDao> searchByName(String name);
+	public Collection<DaoItem> searchByName(String name);
 
 	/**
 	 * 
 	 * @param filter
 	 * @return
 	 */
-	public Collection<EntityDao> find(Hashtable filter);
+	public Collection<DaoItem> find(Hashtable filter);
 }

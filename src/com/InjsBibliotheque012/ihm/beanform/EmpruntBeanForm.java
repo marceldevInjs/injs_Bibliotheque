@@ -1,29 +1,25 @@
-package com.InjsBibliotheque030.dao;
+package com.InjsBibliotheque012.ihm.beanform;
 
 import java.util.Date;
 
-public class EmpruntDao extends DaoItem{
 
-	public EmpruntDao() {
-		// TODO Auto-generated constructor stub
-	}
-	
-	private AdherentDao adherent;
-	private LivreDao livre;
+public class EmpruntBeanForm extends BeanFormItem{
+	private AdherentBeanForm adherent;
+	private LivreBeanForm livre;
 	private Date dateEmprunt;
 	private Date dateLimitePrevueRetour;
 	private Date dateRetour;
 	
-	public AdherentDao getAdherent() {
+	public AdherentBeanForm getAdherent() {
 		return adherent;
 	}
-	public void setAdherent(AdherentDao adherent) {
+	public void setAdherent(AdherentBeanForm adherent) {
 		this.adherent = adherent;
 	}
-	public LivreDao getLivre() {
+	public LivreBeanForm getLivre() {
 		return livre;
 	}
-	public void setLivre(LivreDao livre) {
+	public void setLivre(LivreBeanForm livre) {
 		this.livre = livre;
 	}
 	public Date getDateEmprunt() {
@@ -44,7 +40,4 @@ public class EmpruntDao extends DaoItem{
 	public void setDateRetour(Date dateRetour) {
 		this.dateRetour = dateRetour;
 	}
-	
-	
-
 }

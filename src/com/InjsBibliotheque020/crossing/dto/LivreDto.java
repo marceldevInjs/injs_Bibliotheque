@@ -1,11 +1,6 @@
-package com.InjsBibliotheque030.dao;
+package com.InjsBibliotheque020.crossing.dto;
 
-public class LivreDao extends DaoItem{
-
-	public LivreDao() {
-		// TODO Auto-generated constructor stub
-	}
-	
+public class LivreDto extends DtoItem{
 	private String isbn;
 	private String titre;
 	private String editeur;
@@ -62,6 +57,4 @@ public class LivreDao extends DaoItem{
 	public void setAuteur(String auteur) {
 		this.auteur = auteur;
 	}
-	
-
 }
